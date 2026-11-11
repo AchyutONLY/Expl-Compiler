@@ -107,7 +107,7 @@ cd ../xfs-interface
 ./init
 ```
 
-> **Note:** The commands above illustrate the usual LEX/YACC and XSM workflow. File names, generated output paths, and runtime-library requirements can vary between stages. The simulator and runtime libraries are not included in this repository; obtain them separately and follow their respective license terms.
+> **Note:** The commands above illustrate the usual LEX/YACC and XSM workflow. File names, generated output paths, and runtime-library requirements can vary between stages. The simulator is not included in this repository; obtain them separately and follow their respective license terms.
 
 ## Environment and Third-Party Files
 
