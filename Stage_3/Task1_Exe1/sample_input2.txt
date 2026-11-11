@@ -1,0 +1,15 @@
+read(n);
+
+s = 0;
+
+while (n > 0) do
+
+    read(x);
+
+    s = s + x;
+
+    n = n - 1;
+
+endwhile;
+
+write(s);

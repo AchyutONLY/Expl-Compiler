@@ -1,0 +1,19 @@
+decl
+    int a[5], i, n;
+enddecl
+
+i = 0;
+read(a[0]);
+read(a[1]);
+read(a[2]);
+read(a[3]);
+read(a[4]);
+
+write(a[0]);
+write(a[1]);
+write(a[2]);
+write(a[3]);
+write(a[4]);
+
+a[2] = a[0] + a[1];
+write(a[2]);

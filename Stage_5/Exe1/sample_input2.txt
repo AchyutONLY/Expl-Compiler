@@ -1,0 +1,27 @@
+decl
+    int *idptr(int *p);
+enddecl
+
+int *idptr(int *p)
+{
+    decl
+    enddecl
+    
+    begin
+        return p;
+    end
+}
+
+int main()
+{
+    decl
+        int x, *p;
+    enddecl
+
+    begin
+        x = 42;
+        p = idptr(&x);
+        write(*p);
+        return 0;
+    end
+}

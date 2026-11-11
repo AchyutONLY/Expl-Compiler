@@ -1,0 +1,23 @@
+decl
+    int *bad(void);
+enddecl
+
+int *bad()
+{
+    decl
+        int x;
+    enddecl
+
+    begin
+        x = 7;
+        return &x;
+    end
+}
+
+int main()
+{
+    begin
+        write(1);
+        return 0;
+    end
+}

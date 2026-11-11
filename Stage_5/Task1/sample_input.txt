@@ -1,0 +1,7 @@
+decl
+    int result;
+    int factorial(int n);
+    str name;
+    str join(str first, str second);
+    int arr[5];
+enddecl

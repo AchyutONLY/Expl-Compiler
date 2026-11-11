@@ -1,0 +1,20 @@
+decl
+    tuple student(str name, int roll_no) a, b, *sptr;
+enddecl
+
+int main()
+{
+    begin
+        a.name = "A";
+        a.roll_no = 1;
+
+        b.name = "B";
+        b.roll_no = 2;
+
+        sptr = &a;
+        *sptr = b;
+
+        write(a.roll_no);
+        return 0;
+    end
+}

@@ -1,0 +1,24 @@
+decl
+    tuple student(str name, int roll_no, str branchname, int year_of_admission) a, b, *sptr;
+enddecl
+
+int main()
+{
+    begin
+        a.name = "Alice";
+        a.roll_no = 10;
+        a.branchname = "CSE";
+        a.year_of_admission = 2024;
+
+        b = a;
+
+        write(b.roll_no);
+        write(b.name);
+
+        sptr = &a;
+        *sptr = b;
+
+        write(a.roll_no);
+        return 0;
+    end
+}

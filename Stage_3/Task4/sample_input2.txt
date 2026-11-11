@@ -1,0 +1,20 @@
+i = 0;
+
+while(i < 3) do
+    i = i + 1;
+    j = 0;
+
+    while(j < 5) do
+        j = j + 1;
+
+        if(j == 2) then
+            continue;
+        endif;
+
+        if(j == 4) then
+            break;
+        endif;
+
+        write(j);
+    endwhile;
+endwhile;

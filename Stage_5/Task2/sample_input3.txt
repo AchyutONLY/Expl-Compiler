@@ -1,0 +1,37 @@
+decl
+    int result, x, factorial(int n);
+    str message;
+enddecl
+
+int factorial(int n)
+{
+    decl
+        int f;
+        str x;
+    enddecl
+    begin
+        if(n==0) then
+            f = 1;
+        else
+            f = n * factorial(n-1);
+        endif;
+        x = "local";
+        write(x);
+        return f;
+    end
+}
+
+int main()
+{
+    decl
+        int a;
+    enddecl
+    begin
+        read(a);
+        result = factorial(a);
+        write(result);
+        message = "done";
+        write(message);
+        return 0;
+    end
+}

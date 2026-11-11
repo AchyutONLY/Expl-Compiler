@@ -1,0 +1,18 @@
+decl
+    int x, y, *p, *q;
+enddecl
+
+read(x);
+read(y);
+
+p = &x;
+q = &y;
+
+write(*p);
+write(*q);
+
+*p = 10;
+*q = *p + 30;
+
+write(x);
+write(y);

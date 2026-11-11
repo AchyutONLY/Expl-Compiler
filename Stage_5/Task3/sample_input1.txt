@@ -1,0 +1,26 @@
+decl
+    int add(int a, int b);
+    int result;
+enddecl
+
+int add(int a, int b){
+    decl
+        int c;
+    enddecl
+    begin
+        c=a+b;
+        return c;
+    end
+}
+
+int main(){
+    decl
+        int x;
+    enddecl
+    begin
+        x=add(10,20);
+        result=x;
+        write(result);
+        return 1;
+    end
+}

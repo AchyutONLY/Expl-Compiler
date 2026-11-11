@@ -1,0 +1,19 @@
+# Compiled files
+*.o
+a.out
+
+# Flex and Bison generated files
+lex.yy.c
+y.tab.c
+y.tab.h
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Editor and system files
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,32 @@
+decl
+    int x;
+    int test(int a);
+enddecl
+
+int test(int a)
+{
+    decl
+        str x;
+        int y;
+    enddecl
+    begin
+        x = "local";
+        y = a + 1;
+        write(x);
+        return y;
+    end
+}
+
+int main()
+{
+    decl
+        int a;
+    enddecl
+    begin
+        x = 10;
+        a = test(x);
+        write(x);
+        write(a);
+        return 0;
+    end
+}

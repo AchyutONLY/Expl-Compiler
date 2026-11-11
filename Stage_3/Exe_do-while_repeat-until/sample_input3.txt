@@ -1,0 +1,22 @@
+a = 0;
+
+do
+    a = a + 1;
+
+    if (a == 2) then
+        continue;
+    endif;
+
+    write(a);
+while (a < 4);
+
+b = 0;
+repeat
+    b = b + 1;
+
+    if (b == 3) then
+        break;
+    endif;
+
+    write(b);
+until (b == 5);

@@ -1,0 +1,22 @@
+decl
+    tuple student(str name, int roll_no, str branchname, int year_of_admission) a;
+enddecl
+
+int main()
+{
+    decl
+        tuple student(str name, int roll_no, str branchname, int year_of_admission) b;
+    enddecl
+
+    begin
+        b.name = "Bob";
+        b.roll_no = 25;
+        a = b;
+
+        if(a.name == b.name) then
+            write(a.roll_no);
+        endif;
+
+        return 0;
+    end
+}
